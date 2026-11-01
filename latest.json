@@ -1,9 +1,9 @@
 {
-  "version": "1.1.0",
+  "version": "1.2.0",
   "url": "https://raw.githubusercontent.com/Dialsoft/winfo/main/WinFo.exe",
-  "sha256": "3799cacf6a9d4c0fd0bdac691acb07fac86725369e49a2e82fa68d55a112b719",
-  "size": 514048,
+  "sha256": "311e8dfcf2f385446700fd86dce751a168a84990d4d70c40122856cf3df9b53b",
+  "size": 521728,
   "released": "2026-11-01",
-  "notes": "First public release of WinFo - System Information for Windows.\n\n- Summary dashboard of drag-to-rearrange cards; anything needing attention is yellow or red; click any line to jump to its details\n- Hardware: computer & BIOS, motherboard, processor (P/E cores), every memory stick, graphics & monitors, drives with health / temperature / wear, network & Wi-Fi, USB, printers, battery health, Device Manager problems, drivers\n- Software: Windows version, activation & product key, Windows 11 readiness, security software in use (antivirus, EDR/MDR, DNS filtering - about 60 products recognized), user accounts with creation / sign-in / password dates, programs, updates, startup items, services, processes\n- Event Log Problems: blue screens, sudden shutdowns, hardware & disk errors, driver crashes, failed updates, program crashes, malware detections and failed sign-ins - explained in plain English with what to do\n- Live Sensors with history graphs, Benchmarks (CPU, memory, disk) that compare every PC you test, and Reports (web page, text, print/PDF)\n- Light/dark theme, standard or metric units, detailed tooltips, animations, settings that apply instantly\n- Automatic updates, verified before installing\n- Share button: send WinFo to someone by email, Gmail, Outlook, Facebook Messenger, WhatsApp, text message, Teams, LinkedIn, X or Telegram",
+  "notes": "- BIOS age check: a BIOS older than 6 months is flagged as possibly outdated, with a link straight to the PC or motherboard maker's download site (Dell links open that exact PC's downloads using its service tag)\n- The BIOS warning also appears on the Summary dashboard's Motherboard & BIOS card\n- Links to web sites in saved web-page reports are clickable",
   "page": "https://github.com/Dialsoft/winfo/blob/main/CHANGELOG.md"
 }

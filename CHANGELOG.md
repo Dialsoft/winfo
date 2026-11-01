@@ -1,5 +1,11 @@
 # WinFo - what's new
 
+## Version 1.2.0 - 2026-11-01
+
+- BIOS age check: a BIOS older than 6 months is flagged as possibly outdated, with a link straight to the PC or motherboard maker's download site (Dell links open that exact PC's downloads using its service tag)
+- The BIOS warning also appears on the Summary dashboard's Motherboard & BIOS card
+- Links to web sites in saved web-page reports are clickable
+
 ## Version 1.1.0 - 2026-11-01
 
 First public release of WinFo - System Information for Windows.
