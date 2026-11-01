@@ -1,5 +1,11 @@
 # WinFo - what's new
 
+## Version 1.4.0 - 2026-11-01
+
+- Printers: the IP address and host name of every network printer, on the Summary's Printers card and the Printers page (click the IP to open the printer's own web page); USB, shared and virtual printers are labeled
+- New section - Activation & Licenses: whether Windows and Microsoft Office are activated, license type (OEM, retail, volume KMS/MAK, Microsoft 365 subscription), product keys, KMS expiry and activation errors explained; new Activation card on the Summary
+- New section - Windows 11 Readiness: every Microsoft requirement checked (supported processor generation, TPM 2.0, Secure Boot, UEFI, memory, storage, graphics, display) with a clear verdict and how to fix what fails; new Windows 11 card on the Summary
+
 ## Version 1.3.1 - 2026-11-01
 
 - Printers: every printer now shows its real brand and model (worked out from the device and its driver) - not just the name someone gave it

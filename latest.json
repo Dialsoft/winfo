@@ -1,9 +1,9 @@
 {
-  "version": "1.3.1",
+  "version": "1.4.0",
   "url": "https://raw.githubusercontent.com/Dialsoft/winfo/main/WinFo.exe",
-  "sha256": "eb9ffa4db2b72fe54fedafddcfb4d613470852eecfc48d20f99b9cd025474892",
-  "size": 549376,
+  "sha256": "70fc69dc188392380365d611568d3dca607f4ae997c5db20ad8373e0912ddfc5",
+  "size": 592896,
   "released": "2026-11-01",
-  "notes": "- Printers: every printer now shows its real brand and model (worked out from the device and its driver) - not just the name someone gave it\n- Summary dashboard: the default printer shows its brand and model too, e.g. \"Front Desk - HP LaserJet Pro M404n\"\n- Virtual printers (Print to PDF, XPS, OneNote, Fax) are labeled as such",
+  "notes": "- Printers: the IP address and host name of every network printer, on the Summary's Printers card and the Printers page (click the IP to open the printer's own web page); USB, shared and virtual printers are labeled\n- New section - Activation & Licenses: whether Windows and Microsoft Office are activated, license type (OEM, retail, volume KMS/MAK, Microsoft 365 subscription), product keys, KMS expiry and activation errors explained; new Activation card on the Summary\n- New section - Windows 11 Readiness: every Microsoft requirement checked (supported processor generation, TPM 2.0, Secure Boot, UEFI, memory, storage, graphics, display) with a clear verdict and how to fix what fails; new Windows 11 card on the Summary",
   "page": "https://github.com/Dialsoft/winfo/blob/main/CHANGELOG.md"
 }
