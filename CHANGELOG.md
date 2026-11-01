@@ -11,3 +11,4 @@ First public release of WinFo - System Information for Windows.
 - Live Sensors with history graphs, Benchmarks (CPU, memory, disk) that compare every PC you test, and Reports (web page, text, print/PDF)
 - Light/dark theme, standard or metric units, detailed tooltips, animations, settings that apply instantly
 - Automatic updates, verified before installing
+- Share button: send WinFo to someone by email, Gmail, Outlook, Facebook Messenger, WhatsApp, text message, Teams, LinkedIn, X or Telegram
