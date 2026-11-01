@@ -1,9 +1,9 @@
 {
-  "version": "1.3.0",
+  "version": "1.3.1",
   "url": "https://raw.githubusercontent.com/Dialsoft/winfo/main/WinFo.exe",
-  "sha256": "d3c71579a18824a23b76f9312b505b518feccc1e712d9e12f94b0d4934a7729d",
-  "size": 542720,
+  "sha256": "eb9ffa4db2b72fe54fedafddcfb4d613470852eecfc48d20f99b9cd025474892",
+  "size": 549376,
   "released": "2026-11-01",
-  "notes": "- Printers: shows the last document printed (name, printer, pages, who printed it and when), the last printer used, a \"last used\" date for every printer, and the 25 most recent print jobs\n- Windows keeps print history turned off by default - WinFo offers a one-click switch to turn it on (Administrator; history starts from then)\n- Printers: documents stuck in the print queue are listed with their status\n- Summary dashboard: new Printers card with the default printer (flagged if offline), the last document printed and any stuck print jobs",
+  "notes": "- Printers: every printer now shows its real brand and model (worked out from the device and its driver) - not just the name someone gave it\n- Summary dashboard: the default printer shows its brand and model too, e.g. \"Front Desk - HP LaserJet Pro M404n\"\n- Virtual printers (Print to PDF, XPS, OneNote, Fax) are labeled as such",
   "page": "https://github.com/Dialsoft/winfo/blob/main/CHANGELOG.md"
 }

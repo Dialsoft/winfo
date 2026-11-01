@@ -1,5 +1,11 @@
 # WinFo - what's new
 
+## Version 1.3.1 - 2026-11-01
+
+- Printers: every printer now shows its real brand and model (worked out from the device and its driver) - not just the name someone gave it
+- Summary dashboard: the default printer shows its brand and model too, e.g. "Front Desk - HP LaserJet Pro M404n"
+- Virtual printers (Print to PDF, XPS, OneNote, Fax) are labeled as such
+
 ## Version 1.3.0 - 2026-11-01
 
 - Printers: shows the last document printed (name, printer, pages, who printed it and when), the last printer used, a "last used" date for every printer, and the 25 most recent print jobs
