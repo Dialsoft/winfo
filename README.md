@@ -37,7 +37,16 @@ No installer: download `WinFo.exe` and run it. It works from a USB stick, a netw
 |---|---|
 | Operating System | Edition, version and exact build, install date, uptime, pending restart, activation, product key (registry and BIOS OEM key), **Windows 11 readiness check** |
 | Security | **Which security software is protecting the PC** — antivirus, EDR / MDR agents (SentinelOne, Huntress, CrowdStrike, Sophos, Bitdefender, ThreatLocker, Umbrella and about 60 others), Defender status and mode, firewall, UAC, TPM, BitLocker, memory integrity, SMBv1, local accounts with **creation date, first and last sign-in, password age and failed attempts**, domain / Entra ID accounts that have signed in, and Administrators group members |
-| Installed Programs, Updates, Startup, Services, Processes, Shares, Environment | Full lists with dates, versions and plain-English notes (startup items disabled in Task Manager are marked) |
+| Activation & Licenses | Whether Windows and Microsoft Office are activated, license type (OEM, retail, KMS/MAK, Microsoft 365), activation errors explained |
+| Users & Sign-ins | Every local, domain and Entra ID / Microsoft account with last sign-in, creation date and whether it's an administrator |
+| Windows 11 Readiness | Every Microsoft requirement checked (processor, TPM 2.0, Secure Boot, UEFI, memory, storage, graphics) with how to fix what fails |
+| **FTC Safeguards Check** | See below |
+| Updates Available | Windows updates waiting to install (security updates flagged) and Microsoft Store apps / programs with newer versions (via winget) |
+| Shares & Mapped Drives | A **security review** of file sharing: who can reach each shared folder, anonymous and guest access, the SMB version in use explained, firewall, saved passwords on mapped drives — with fixes |
+| Installed Programs, Windows Updates, Startup, Services, Processes, Environment | Full lists with dates, versions and plain-English notes (startup items disabled in Task Manager are marked) |
+
+### FTC Safeguards Check
+Car dealers and other businesses that arrange financing must follow the **FTC Safeguards Rule** (16 CFR Part 314). WinFo checks the technical parts that can be seen on a PC — BitLocker encryption, administrator and unused accounts, blank passwords, password length and lockout, screen lock, UAC, Remote Desktop, remote-access tools, file sharing, supported Windows version, recent updates, antivirus / EDR, firewall, SMB1, end-of-life software, Secure Boot / TPM, sign-in auditing and Security log size — and lists the paperwork items (written program, Qualified Individual, risk assessment, training, etc.) as a checklist. Every result says why it matters and how to fix it, with a score and grade. **Save a printable report** headed with your company name for the dealership's compliance file. *This is a technical checklist, not legal advice.*
 
 ### Diagnostics — Event Log Problems
 Scans the Windows event logs (7 days to 1 year) and explains what it finds, with advice on what to do:
@@ -50,12 +59,38 @@ Scans the Windows event logs (7 days to 1 year) and explains what it finds, with
 - **Security:** malware detections, Defender turned off, failed sign-ins grouped by user and source, account lockouts, users added to Administrators, the Security log being cleared, suspicious new services
 - **History:** who restarted the PC and why, and how long each startup took
 
-Double-click any problem to see the actual events, copy them into a ticket, or open Event Viewer.
+Double-click any problem to see the actual events, copy them into a ticket, or open Event Viewer straight at the right log.
+
+### Diagnostics — Changes Since Last Visit
+WinFo saves a small **snapshot** every time it runs and shows exactly what changed since the last visit: programs installed, updated or removed, **new administrators** and accounts, startup items, scheduled tasks, services, drivers, hardware swaps (memory, drives, motherboard), DNS / proxy / hosts-file changes and security settings — risky changes flagged in red or yellow. Compare with any earlier visit. Run WinFo from a USB stick and the stick remembers every PC it has been plugged into.
 
 ### Tools
 - **Live Sensors:** CPU (per thread), memory, GPU engines and video memory, disk activity, network throughput, temperatures (ACPI, drives, NVIDIA GPUs), battery — with min / max and history graphs.
 - **Benchmarks:** CPU integer, floating point and SHA-256 (one thread and all threads), memory read / write / copy / latency, disk sequential and 4K random. Results are saved and **every PC you test is ranked side by side**; when run from a USB stick, results are stored on the stick.
+- **Network Speed Test:** download and upload speed, ping, jitter and packet loss to the router, DNS server and three internet servers, DNS lookup time, latency while the line is busy (bufferbloat), public IP and internet provider, Wi-Fi signal and band — with a plain-English verdict on whether a problem is inside the building or at the provider. Every test is saved.
 - **Reports:** save as a web page or text, print or make a PDF, or copy into an email or ticket. Serial numbers and keys can be hidden.
+
+### Command line (RMM tools, scheduled tasks)
+WinFo can run with **no window**, so ConnectWise RMM, N-able, NinjaOne, a scheduled task or a login script can collect reports from every PC:
+
+| Option | What it does |
+|---|---|
+| `/report <file>` | Full report of every page (`.html`, or `.txt` for plain text) |
+| `/safeguards <file>` | Printable FTC Safeguards report (`.html`) |
+| `/snapshot [folder]` | Save a snapshot for *Changes Since Last Visit* |
+| `/changes <file>` | What changed since the last snapshot |
+| `/fleet <file.csv>` | Add one line about this PC to a shared spreadsheet — point every PC at the same file on a server share and a whole dealer group lands in one list (model, serial, age, Windows support date, Windows 11 readiness, BitLocker, antivirus, last update, drive health, Safeguards score…) |
+| `/site "<name>"` | Store / location name written to the fleet line |
+| `/help` | List the options |
+
+In file names `{computer}` and `{date}` are replaced. Command-line snapshots are kept in `%ProgramData%\Dialsoft\WinFo\Snapshots` (or the folder given to `/snapshot`), because RMM tools often run programs from a temporary folder. If the fleet spreadsheet is open in Excel, the PC's line waits in a `<name> pending` folder and is added on the next run. Exit codes: `0` done, `1` something failed, `2` done but Safeguards checks failed. Progress is written to the console and to `cli.log`.
+
+Because WinFo is a Windows (not console) program, ask the script to wait for it:
+```powershell
+$p = Start-Process "C:\Tools\WinFo.exe" -Wait -PassThru -ArgumentList '/safeguards "\\server\it\{computer}.html" /fleet "\\server\it\fleet.csv" /site "Main St"'
+exit $p.ExitCode
+```
+or from a batch file: `start "" /wait WinFo.exe /report "C:\Reports\{computer} {date}.html"`. Run it as Administrator or SYSTEM for complete results.
 
 ### Everyday comforts
 - Detailed **explanation tooltips** on almost everything
@@ -82,7 +117,7 @@ WinFo isn't code-signed yet, so Windows may show *"Windows protected your PC."* 
 ### Language and platform
 - **Language:** C# 7
 - **Framework:** .NET Framework 4.8 with Windows Forms (WinForms) for the user interface
-- **Packaging:** a single, self-contained `WinFo.exe` (about 500 KB) with an embedded icon, version information and application manifest (DPI-aware; asks for the highest available rights)
+- **Packaging:** a single, self-contained `WinFo.exe` (under 1 MB) with an embedded icon, version information and application manifest (DPI-aware; asks for the highest available rights)
 - **Third-party libraries:** none. WinFo uses only components built into Windows and the .NET Framework.
 
 ### Windows resources used
@@ -99,16 +134,23 @@ WinFo isn't code-signed yet, so Windows may show *"Windows protected your PC."* 
 | Registry | Windows version and build, installed programs, startup approval state, Secure Boot, firewall profiles, user profile sign-in times, graphics memory, pending-restart flags |
 | Command-line tools | `netsh wlan show interfaces` (Wi-Fi details); `nvidia-smi` (NVIDIA GPU temperature, fan, power and clocks, when an NVIDIA driver is installed) |
 | Optional | **LibreHardwareMonitor** / OpenHardwareMonitor: if either is running, WinFo shows their CPU core temperatures, fan speeds and voltages automatically |
+| Security policy | netapi32 NetUserModalsGet (password and lockout policy); advapi32 AuditQuerySystemPolicy (sign-in auditing) |
+| Updates available | Windows Update Agent (`Microsoft.Update.Session` COM); `winget upgrade` (Windows Package Manager — Microsoft Store and winget catalog) |
+| Network speed test | ICMP ping (System.Net.NetworkInformation); Cloudflare's public speed-test endpoints at `speed.cloudflare.com` (download, upload, provider lookup) — only when you press *Start* |
+| Scheduled tasks | `schtasks /query` (for snapshots) |
 | Updates | `latest.json` and `WinFo.exe` in this repository, downloaded over HTTPS (TLS 1.2) from raw.githubusercontent.com |
 
 ### Files WinFo writes
 - **Settings:** `%APPDATA%\Dialsoft\WinFo\settings.ini`. To keep settings with the program instead (handy on a USB stick), put an empty `WinFo.ini` next to `WinFo.exe`.
 - **Logs:** `startup.log` and `error.log` in the same folder.
 - **Benchmark results:** `WinFo-benchmarks.csv` next to `WinFo.exe` when that folder is writable, otherwise in the AppData folder.
+- **Snapshots** (*Changes Since Last Visit*): small text files in a `WinFo Snapshots` folder next to `WinFo.exe` when that folder is writable (e.g. a USB stick), otherwise in `%APPDATA%\Dialsoft\WinFo\Snapshots`. The newest 60 per PC are kept. Can be turned off in Settings.
+- **Speed test history:** `SpeedTests.csv` in the same folder as the benchmark results.
+- **Command line:** `cli.log` in the settings folder.
 - **Disk benchmark:** a temporary test file inside a `WinFo-benchmark` folder on the drive being tested. It is deleted automatically, even if WinFo is closed mid-test.
 
 ### Privacy
-WinFo collects information **locally only**. The only network request it makes on its own is the once-a-day update check to GitHub, which you can turn off in Settings. Nothing about your PC is ever sent anywhere. Reports are only created when you ask for one.
+WinFo collects information **locally only**. The only network request it makes on its own is the once-a-day update check to GitHub, which you can turn off in Settings. The network speed test contacts Cloudflare's speed-test servers only when you press *Start speed test*; the Updates Available page asks Windows Update and winget. Nothing about your PC is ever sent anywhere. Reports are only created when you ask for one.
 
 ---
 

@@ -1,5 +1,12 @@
 # WinFo - what's new
 
+## Version 1.6.0 - 2026-11-01
+
+- New section - FTC Safeguards Check: checks this PC against the technical requirements of the FTC Safeguards Rule (which applies to car dealers and other businesses that arrange financing) - BitLocker encryption, administrator accounts, unused accounts, blank passwords, password length and lockout, screen lock, UAC, Remote Desktop, remote-access tools, file sharing, supported Windows version, recent updates, antivirus/EDR, firewall, SMB1, end-of-life software (old Office, Flash, Java...), Secure Boot/TPM, sign-in auditing and log size. Each result explains why it matters and how to fix it, with a score and grade
+- Printable, client-ready Safeguards report with your company name and a sign-off line for the dealership's compliance file (set the company name in Settings > Reports and snapshots); new FTC Safeguards card on the Summary
+- New section - Changes Since Last Visit: WinFo saves a snapshot every time it runs and shows exactly what changed since the last visit - programs installed or removed, new administrators and accounts, startup items, scheduled tasks, services, drivers, hardware swaps, DNS/proxy changes and security settings, with risky changes flagged. Run WinFo from a USB stick and the stick remembers every PC. Compare with any earlier visit; new Changes card on the Summary
+- Command-line mode for RMM tools (ConnectWise RMM, N-able, NinjaOne) and scheduled tasks - runs with no window: /report, /safeguards, /snapshot, /changes, and /fleet, which adds one line per PC to a shared spreadsheet so a whole dealer group lands in one list (model, serial, age, Windows support, Windows 11 readiness, BitLocker, antivirus, last update, drive health, Safeguards score). Run WinFo.exe /help for details
+
 ## Version 1.5.0 - 2026-11-01
 
 - New Tools section - Network Speed Test: download and upload speed, ping, jitter and packet loss to the router, DNS server and three internet servers, DNS lookup time, speed while the line is busy (bufferbloat), public IP and internet provider, Wi-Fi signal and band - with a plain-English diagnosis of whether a problem is inside the building or at the provider. Every test is saved to SpeedTests.csv
