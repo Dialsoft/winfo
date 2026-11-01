@@ -1,9 +1,9 @@
 {
-  "version": "1.2.1",
+  "version": "1.2.2",
   "url": "https://raw.githubusercontent.com/Dialsoft/winfo/main/WinFo.exe",
-  "sha256": "1fd4ec4cd202a40ad11f7d1ee3a661cae7b6623333475ff69060c23a798aa7a8",
-  "size": 528384,
+  "sha256": "ae8c43637e5e4a66e030ddc108fff0d3959a3ec922fe03a7a5467941fa3a587c",
+  "size": 530432,
   "released": "2026-11-01",
-  "notes": "- Summary dashboard: the Security card now shows BitLocker drive encryption for every drive (On, Suspended, Encrypting with progress, Paused, Off), and warns when the Windows drive isn't protected or has no recovery key\n- Security page: one BitLocker line per drive, including whether a recovery password exists\n- Storage page: clearer BitLocker states on each drive letter",
+  "notes": "- Processor links to cpubenchmark.net (PassMark): click the processor name on the Summary dashboard or the Processor page to see its CPU Mark score and ranking; a new \"CPU Mark (PassMark)\" line on the Processor page does the same",
   "page": "https://github.com/Dialsoft/winfo/blob/main/CHANGELOG.md"
 }

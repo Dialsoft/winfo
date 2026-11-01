@@ -1,5 +1,9 @@
 # WinFo - what's new
 
+## Version 1.2.2 - 2026-11-01
+
+- Processor links to cpubenchmark.net (PassMark): click the processor name on the Summary dashboard or the Processor page to see its CPU Mark score and ranking; a new "CPU Mark (PassMark)" line on the Processor page does the same
+
 ## Version 1.2.1 - 2026-11-01
 
 - Summary dashboard: the Security card now shows BitLocker drive encryption for every drive (On, Suspended, Encrypting with progress, Paused, Off), and warns when the Windows drive isn't protected or has no recovery key
