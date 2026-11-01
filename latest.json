@@ -1,9 +1,9 @@
 {
-  "version": "1.2.0",
+  "version": "1.2.1",
   "url": "https://raw.githubusercontent.com/Dialsoft/winfo/main/WinFo.exe",
-  "sha256": "311e8dfcf2f385446700fd86dce751a168a84990d4d70c40122856cf3df9b53b",
-  "size": 521728,
+  "sha256": "1fd4ec4cd202a40ad11f7d1ee3a661cae7b6623333475ff69060c23a798aa7a8",
+  "size": 528384,
   "released": "2026-11-01",
-  "notes": "- BIOS age check: a BIOS older than 6 months is flagged as possibly outdated, with a link straight to the PC or motherboard maker's download site (Dell links open that exact PC's downloads using its service tag)\n- The BIOS warning also appears on the Summary dashboard's Motherboard & BIOS card\n- Links to web sites in saved web-page reports are clickable",
+  "notes": "- Summary dashboard: the Security card now shows BitLocker drive encryption for every drive (On, Suspended, Encrypting with progress, Paused, Off), and warns when the Windows drive isn't protected or has no recovery key\n- Security page: one BitLocker line per drive, including whether a recovery password exists\n- Storage page: clearer BitLocker states on each drive letter",
   "page": "https://github.com/Dialsoft/winfo/blob/main/CHANGELOG.md"
 }

@@ -1,5 +1,11 @@
 # WinFo - what's new
 
+## Version 1.2.1 - 2026-11-01
+
+- Summary dashboard: the Security card now shows BitLocker drive encryption for every drive (On, Suspended, Encrypting with progress, Paused, Off), and warns when the Windows drive isn't protected or has no recovery key
+- Security page: one BitLocker line per drive, including whether a recovery password exists
+- Storage page: clearer BitLocker states on each drive letter
+
 ## Version 1.2.0 - 2026-11-01
 
 - BIOS age check: a BIOS older than 6 months is flagged as possibly outdated, with a link straight to the PC or motherboard maker's download site (Dell links open that exact PC's downloads using its service tag)
