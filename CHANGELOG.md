@@ -1,5 +1,12 @@
 # WinFo - what's new
 
+## Version 1.3.0 - 2026-11-01
+
+- Printers: shows the last document printed (name, printer, pages, who printed it and when), the last printer used, a "last used" date for every printer, and the 25 most recent print jobs
+- Windows keeps print history turned off by default - WinFo offers a one-click switch to turn it on (Administrator; history starts from then)
+- Printers: documents stuck in the print queue are listed with their status
+- Summary dashboard: new Printers card with the default printer (flagged if offline), the last document printed and any stuck print jobs
+
 ## Version 1.2.2 - 2026-11-01
 
 - Processor links to cpubenchmark.net (PassMark): click the processor name on the Summary dashboard or the Processor page to see its CPU Mark score and ranking; a new "CPU Mark (PassMark)" line on the Processor page does the same

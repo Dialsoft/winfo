@@ -1,9 +1,9 @@
 {
-  "version": "1.2.2",
+  "version": "1.3.0",
   "url": "https://raw.githubusercontent.com/Dialsoft/winfo/main/WinFo.exe",
-  "sha256": "ae8c43637e5e4a66e030ddc108fff0d3959a3ec922fe03a7a5467941fa3a587c",
-  "size": 530432,
+  "sha256": "d3c71579a18824a23b76f9312b505b518feccc1e712d9e12f94b0d4934a7729d",
+  "size": 542720,
   "released": "2026-11-01",
-  "notes": "- Processor links to cpubenchmark.net (PassMark): click the processor name on the Summary dashboard or the Processor page to see its CPU Mark score and ranking; a new \"CPU Mark (PassMark)\" line on the Processor page does the same",
+  "notes": "- Printers: shows the last document printed (name, printer, pages, who printed it and when), the last printer used, a \"last used\" date for every printer, and the 25 most recent print jobs\n- Windows keeps print history turned off by default - WinFo offers a one-click switch to turn it on (Administrator; history starts from then)\n- Printers: documents stuck in the print queue are listed with their status\n- Summary dashboard: new Printers card with the default printer (flagged if offline), the last document printed and any stuck print jobs",
   "page": "https://github.com/Dialsoft/winfo/blob/main/CHANGELOG.md"
 }
