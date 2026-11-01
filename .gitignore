@@ -1,0 +1,9 @@
+# SAFETY: this PUBLIC repository may only ever contain the published build and its notes.
+# Everything is ignored except the files listed below, so source code (*.cs, src/, build
+# scripts...) can never be added by accident - not even with "git add -A".
+*
+!.gitignore
+!README.md
+!CHANGELOG.md
+!latest.json
+!WinFo.exe
