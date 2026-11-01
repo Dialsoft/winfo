@@ -4,7 +4,7 @@
 
 It's built for IT technicians working on client PCs, and friendly enough for anyone who wants to know what's inside their computer.
 
-**[⬇ Download the latest WinFo.exe](https://github.com/Dialsoft/winfo/releases/latest/download/WinFo.exe)** · [All releases & what's new](https://github.com/Dialsoft/winfo/releases)
+**[⬇ Download the latest WinFo.exe](https://github.com/Dialsoft/winfo/raw/main/WinFo.exe)** · [What's new (changelog)](CHANGELOG.md)
 
 No installer: download `WinFo.exe` and run it. It works from a USB stick, a network share, or pushed through a remote-support tool.
 
@@ -63,7 +63,7 @@ Double-click any problem to see the actual events, copy them into a ticket, or o
 - **Standard (°F, inches) or Metric (°C, cm)** units
 - Animations can be turned off for remote sessions
 - Every setting **takes effect instantly** — nothing ever needs a restart
-- **Automatic updates:** once a day WinFo checks this repository; when a new version is published, a bar offers *Update now*. The download is verified (size, SHA-256 checksum, publisher and version) before it replaces the old copy, and WinFo restarts itself.
+- **Automatic updates:** once a day WinFo checks `latest.json` in this repository; when a new version is published, a bar offers *Update now*. The download is verified (size, SHA-256 checksum, publisher and version) before it replaces the old copy, and WinFo restarts itself.
 
 ---
 
@@ -99,7 +99,7 @@ WinFo isn't code-signed yet, so Windows may show *"Windows protected your PC."* 
 | Registry | Windows version and build, installed programs, startup approval state, Secure Boot, firewall profiles, user profile sign-in times, graphics memory, pending-restart flags |
 | Command-line tools | `netsh wlan show interfaces` (Wi-Fi details); `nvidia-smi` (NVIDIA GPU temperature, fan, power and clocks, when an NVIDIA driver is installed) |
 | Optional | **LibreHardwareMonitor** / OpenHardwareMonitor: if either is running, WinFo shows their CPU core temperatures, fan speeds and voltages automatically |
-| Updates | GitHub Releases API for this repository (`api.github.com/repos/Dialsoft/winfo/releases/latest`), over HTTPS with TLS 1.2 |
+| Updates | `latest.json` and `WinFo.exe` in this repository, downloaded over HTTPS (TLS 1.2) from raw.githubusercontent.com |
 
 ### Files WinFo writes
 - **Settings:** `%APPDATA%\Dialsoft\WinFo\settings.ini`. To keep settings with the program instead (handy on a USB stick), put an empty `WinFo.ini` next to `WinFo.exe`.
@@ -115,4 +115,4 @@ WinFo collects information **locally only**. The only network request it makes o
 ## About
 **WinFo** © 2026 Dialsoft LLC — Marc Frega, Wharton NJ. All rights reserved.
 
-This repository hosts the official releases. Bug reports and suggestions are welcome under [Issues](https://github.com/Dialsoft/winfo/issues).
+This repository hosts the official builds: `WinFo.exe` is always the latest version, `latest.json` tells installed copies about it, and `CHANGELOG.md` lists what changed. Bug reports and suggestions are welcome under [Issues](https://github.com/Dialsoft/winfo/issues).

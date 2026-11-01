@@ -1,0 +1,9 @@
+{
+  "version": "1.1.0",
+  "url": "https://raw.githubusercontent.com/Dialsoft/winfo/main/WinFo.exe",
+  "sha256": "0178f46f6f8f1fa0429ad61f63f11411e7b76c905b8deb1f3dd18a516f9897c9",
+  "size": 501760,
+  "released": "2026-11-01",
+  "notes": "First public release of WinFo - System Information for Windows.\n\n- Summary dashboard of drag-to-rearrange cards; anything needing attention is yellow or red; click any line to jump to its details\n- Hardware: computer & BIOS, motherboard, processor (P/E cores), every memory stick, graphics & monitors, drives with health / temperature / wear, network & Wi-Fi, USB, printers, battery health, Device Manager problems, drivers\n- Software: Windows version, activation & product key, Windows 11 readiness, security software in use (antivirus, EDR/MDR, DNS filtering - about 60 products recognized), user accounts with creation / sign-in / password dates, programs, updates, startup items, services, processes\n- Event Log Problems: blue screens, sudden shutdowns, hardware & disk errors, driver crashes, failed updates, program crashes, malware detections and failed sign-ins - explained in plain English with what to do\n- Live Sensors with history graphs, Benchmarks (CPU, memory, disk) that compare every PC you test, and Reports (web page, text, print/PDF)\n- Light/dark theme, standard or metric units, detailed tooltips, animations, settings that apply instantly\n- Automatic updates, verified before installing",
+  "page": "https://github.com/Dialsoft/winfo/blob/main/CHANGELOG.md"
+}
