@@ -1,5 +1,15 @@
 # WinFo - what's new
 
+## Version 1.5.0 - 2026-11-01
+
+- New Tools section - Network Speed Test: download and upload speed, ping, jitter and packet loss to the router, DNS server and three internet servers, DNS lookup time, speed while the line is busy (bufferbloat), public IP and internet provider, Wi-Fi signal and band - with a plain-English diagnosis of whether a problem is inside the building or at the provider. Every test is saved to SpeedTests.csv
+- New section - Updates Available: Windows updates waiting to be installed (security updates flagged), plus Microsoft Store apps and programs with newer versions (via winget), with links to the Store and Windows Update to install them
+- Shares & Mapped Drives is now a full security review: who can reach each shared folder and what they can do, anonymous and guest access, firewall, saved passwords on mapped drives - with a fix for every problem found
+- Which SMB (file sharing) version is in use, explained in plain English, including a warning if the old, insecure SMB1 is still turned on
+- New section - Users & Sign-ins: every account with its last sign-in, creation date and whether it's an administrator; new Users card on the Summary
+- Event Log Problems: open Windows Event Viewer from the page, or right-click a problem to open Event Viewer straight at that log. Device Problems: open Device Manager from the page
+- Fixed "&" showing as an underscore in some page titles
+
 ## Version 1.4.0 - 2026-11-01
 
 - Printers: the IP address and host name of every network printer, on the Summary's Printers card and the Printers page (click the IP to open the printer's own web page); USB, shared and virtual printers are labeled
