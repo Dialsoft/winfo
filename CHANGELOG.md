@@ -1,5 +1,9 @@
 # WinFo - what's new
 
+## Version 1.8.1 - 2026-11-09
+
+- The "This PC" box (computer name, user, connection, IP and MAC addresses, public IP) now sits at the bottom of the left panel, under the list of pages
+
 ## Version 1.8.0 - 2026-11-09
 
 - New ribbon toolbar in the style of MAC Scout: File menu plus Home, View, Tools and Help tabs with Microsoft Fluent icons that follow the light/dark theme. Home has Back, Summary, Refresh, the Find box, reports and settings; View jumps to any page and toggles the navigation pane, dark theme, text size, notifications, tooltips, serial numbers and units; Tools opens every WinFo tool and 15 Windows tools (Event Viewer, Device Manager, Task Manager, Services, Disks, Computer Management, Network Connections, Programs, Printers, Windows Update, System Info, Control Panel, Registry, Command Prompt, PowerShell); Help has About, Check for updates, What's new and Share. Double-click a tab to collapse the ribbon - WinFo remembers

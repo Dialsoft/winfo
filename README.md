@@ -98,7 +98,7 @@ exit $p.ExitCode
 or from a batch file: `start "" /wait WinFo.exe /report "C:\Reports\{computer} {date}.html"`. Run it as Administrator or SYSTEM for complete results.
 
 ### Ribbon and "This PC"
-An Office-style **ribbon** (File, Home, View, Tools, Help) with Microsoft Fluent icons that follow the light/dark theme: navigation, Find, reports, appearance toggles, every WinFo tool and 15 Windows tools (Event Viewer, Device Manager, Task Manager, Services, Disk Management, Network Connections, Command Prompt, PowerShell…). The **This PC** box at the top of the left panel always shows the computer name, signed-in user, connection type (wired or Wi-Fi), local IP, MAC address and the public IP — click any line to copy it.
+An Office-style **ribbon** (File, Home, View, Tools, Help) with Microsoft Fluent icons that follow the light/dark theme: navigation, Find, reports, appearance toggles, every WinFo tool and 15 Windows tools (Event Viewer, Device Manager, Task Manager, Services, Disk Management, Network Connections, Command Prompt, PowerShell…). The **This PC** box at the bottom of the left panel always shows the computer name, signed-in user, connection type (wired or Wi-Fi), local IP, MAC address and the public IP — click any line to copy it.
 
 ### QUIC (HTTP/3) check
 Tests whether the fast connection type Edge and Chrome use for many big sites works on this network (blocked / large packets dropped / fine), and can turn QUIC off in Edge and Chrome with one click — the cure for `ERR_QUIC_PROTOCOL_ERROR`. Part of the Network Speed Test, or on its own from Tools.

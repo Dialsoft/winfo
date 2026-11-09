@@ -1,9 +1,9 @@
 {
-  "version": "1.8.0",
+  "version": "1.8.1",
   "url": "https://raw.githubusercontent.com/Dialsoft/winfo/main/WinFo.exe",
-  "sha256": "2e9dbe00cf658bce5f3a6b61c3b04c96dd67045ed76b35ebf797c06e9ac52c86",
+  "sha256": "1014fe737f6d544f4c5977e7cab5c6d3073d6cfba4bfb13fde23e05791facfae",
   "size": 1250304,
   "released": "2026-11-09",
-  "notes": "- New ribbon toolbar in the style of MAC Scout: File menu plus Home, View, Tools and Help tabs with Microsoft Fluent icons that follow the light/dark theme. Home has Back, Summary, Refresh, the Find box, reports and settings; View jumps to any page and toggles the navigation pane, dark theme, text size, notifications, tooltips, serial numbers and units; Tools opens every WinFo tool and 15 Windows tools (Event Viewer, Device Manager, Task Manager, Services, Disks, Computer Management, Network Connections, Programs, Printers, Windows Update, System Info, Control Panel, Registry, Command Prompt, PowerShell); Help has About, Check for updates, What's new and Share. Double-click a tab to collapse the ribbon - WinFo remembers\n- New \"This PC\" box at the top of the left panel: computer name, signed-in user, connection type (Wired Ethernet or Wi-Fi with network name and link speed), local IP address, MAC address and the public (outside) IP address - the one sites like ipchicken.com show. Click a line to copy it; updates by itself when the network changes\n- New QUIC (HTTP/3) check (Tools > QUIC check, and part of the speed test): tests whether the fast connection type Edge and Chrome use works on this network - blocked, large packets dropped, or fine - and can turn QUIC off in Edge and Chrome with one click (the cure for ERR_QUIC_PROTOCOL_ERROR), with Undo\n- \"Diagnose with AI\" can open in a different browser: pick one per click from the arrow menu, or set your usual one in Settings > Notifications and AI (lists the browsers installed on the PC)",
+  "notes": "- The \"This PC\" box (computer name, user, connection, IP and MAC addresses, public IP) now sits at the bottom of the left panel, under the list of pages",
   "page": "https://github.com/Dialsoft/winfo/blob/main/CHANGELOG.md"
 }
