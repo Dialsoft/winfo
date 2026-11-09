@@ -1,5 +1,11 @@
 # WinFo - what's new
 
+## Version 1.7.0 - 2026-11-09
+
+- Event-log notifications on the Summary dashboard: recent critical events (and serious errors like blue screens, bad disk blocks and hardware errors) appear in a strip at the top, newest first, with when they happened and how many times. New ones appear by themselves within seconds while WinFo is open. Dismiss one and it stays hidden until it happens again
+- "Diagnose with AI" on every notification, in Event Log Problems (right-click) and in the event details window: opens Claude, ChatGPT, Copilot, Perplexity or Gemini with a ready-made question - the PC's model, Windows version, processor and memory, the event and its message - asking what it means and how to fix it. The question is also copied to the clipboard. Computer name, user name and serial number are never included
+- New Settings section "Notifications and AI": turn notifications on or off, choose critical only / critical + serious errors / every error, how many days back, and your preferred AI assistant - all apply immediately
+
 ## Version 1.6.0 - 2026-11-01
 
 - New section - FTC Safeguards Check: checks this PC against the technical requirements of the FTC Safeguards Rule (which applies to car dealers and other businesses that arrange financing) - BitLocker encryption, administrator accounts, unused accounts, blank passwords, password length and lockout, screen lock, UAC, Remote Desktop, remote-access tools, file sharing, supported Windows version, recent updates, antivirus/EDR, firewall, SMB1, end-of-life software (old Office, Flash, Java...), Secure Boot/TPM, sign-in auditing and log size. Each result explains why it matters and how to fix it, with a score and grade

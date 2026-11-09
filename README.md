@@ -61,6 +61,11 @@ Scans the Windows event logs (7 days to 1 year) and explains what it finds, with
 
 Double-click any problem to see the actual events, copy them into a ticket, or open Event Viewer straight at the right log.
 
+### Notifications and "Diagnose with AI"
+The Summary dashboard opens with a **notifications strip** of recent critical events from the Windows event logs (and, by default, serious errors such as blue screens, bad disk blocks and hardware errors) — newest first, with how often each happened. New events appear by themselves while WinFo is open; dismissed ones stay hidden until they happen again.
+
+Every notification — and every problem on the Event Log Problems page — has **Diagnose with AI**: WinFo writes a ready-made question (PC model, Windows version, processor, memory, the event and its message) and opens it in **Claude, ChatGPT, Copilot, Perplexity or Gemini**, asking what it means and how to fix it. The question is also copied to the clipboard. The computer name, user name and serial number are never included; nothing is sent until you click.
+
 ### Diagnostics — Changes Since Last Visit
 WinFo saves a small **snapshot** every time it runs and shows exactly what changed since the last visit: programs installed, updated or removed, **new administrators** and accounts, startup items, scheduled tasks, services, drivers, hardware swaps (memory, drives, motherboard), DNS / proxy / hosts-file changes and security settings — risky changes flagged in red or yellow. Compare with any earlier visit. Run WinFo from a USB stick and the stick remembers every PC it has been plugged into.
 
@@ -150,7 +155,7 @@ WinFo isn't code-signed yet, so Windows may show *"Windows protected your PC."* 
 - **Disk benchmark:** a temporary test file inside a `WinFo-benchmark` folder on the drive being tested. It is deleted automatically, even if WinFo is closed mid-test.
 
 ### Privacy
-WinFo collects information **locally only**. The only network request it makes on its own is the once-a-day update check to GitHub, which you can turn off in Settings. The network speed test contacts Cloudflare's speed-test servers only when you press *Start speed test*; the Updates Available page asks Windows Update and winget. Nothing about your PC is ever sent anywhere. Reports are only created when you ask for one.
+WinFo collects information **locally only**. The only network request it makes on its own is the once-a-day update check to GitHub, which you can turn off in Settings. The network speed test contacts Cloudflare's speed-test servers only when you press *Start speed test*; the Updates Available page asks Windows Update and winget. *Diagnose with AI* opens the AI site you pick in your browser, with the question in the link — only when you click it. Nothing about your PC is ever sent anywhere. Reports are only created when you ask for one.
 
 ---
 
