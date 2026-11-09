@@ -1,5 +1,12 @@
 # WinFo - what's new
 
+## Version 1.8.0 - 2026-11-09
+
+- New ribbon toolbar in the style of MAC Scout: File menu plus Home, View, Tools and Help tabs with Microsoft Fluent icons that follow the light/dark theme. Home has Back, Summary, Refresh, the Find box, reports and settings; View jumps to any page and toggles the navigation pane, dark theme, text size, notifications, tooltips, serial numbers and units; Tools opens every WinFo tool and 15 Windows tools (Event Viewer, Device Manager, Task Manager, Services, Disks, Computer Management, Network Connections, Programs, Printers, Windows Update, System Info, Control Panel, Registry, Command Prompt, PowerShell); Help has About, Check for updates, What's new and Share. Double-click a tab to collapse the ribbon - WinFo remembers
+- New "This PC" box at the top of the left panel: computer name, signed-in user, connection type (Wired Ethernet or Wi-Fi with network name and link speed), local IP address, MAC address and the public (outside) IP address - the one sites like ipchicken.com show. Click a line to copy it; updates by itself when the network changes
+- New QUIC (HTTP/3) check (Tools > QUIC check, and part of the speed test): tests whether the fast connection type Edge and Chrome use works on this network - blocked, large packets dropped, or fine - and can turn QUIC off in Edge and Chrome with one click (the cure for ERR_QUIC_PROTOCOL_ERROR), with Undo
+- "Diagnose with AI" can open in a different browser: pick one per click from the arrow menu, or set your usual one in Settings > Notifications and AI (lists the browsers installed on the PC)
+
 ## Version 1.7.1 - 2026-11-09
 
 - Fixed "Diagnose with AI" failing to open in Edge/Chrome (ERR_QUIC_PROTOCOL_ERROR): the link to the AI site is now much shorter. The complete question, with the full event message, is always on the clipboard - the status bar says so, and if a page doesn't load you can open the site and press Ctrl+V

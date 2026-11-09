@@ -97,6 +97,12 @@ exit $p.ExitCode
 ```
 or from a batch file: `start "" /wait WinFo.exe /report "C:\Reports\{computer} {date}.html"`. Run it as Administrator or SYSTEM for complete results.
 
+### Ribbon and "This PC"
+An Office-style **ribbon** (File, Home, View, Tools, Help) with Microsoft Fluent icons that follow the light/dark theme: navigation, Find, reports, appearance toggles, every WinFo tool and 15 Windows tools (Event Viewer, Device Manager, Task Manager, Services, Disk Management, Network Connections, Command Prompt, PowerShell…). The **This PC** box at the top of the left panel always shows the computer name, signed-in user, connection type (wired or Wi-Fi), local IP, MAC address and the public IP — click any line to copy it.
+
+### QUIC (HTTP/3) check
+Tests whether the fast connection type Edge and Chrome use for many big sites works on this network (blocked / large packets dropped / fine), and can turn QUIC off in Edge and Chrome with one click — the cure for `ERR_QUIC_PROTOCOL_ERROR`. Part of the Network Speed Test, or on its own from Tools.
+
 ### Everyday comforts
 - Detailed **explanation tooltips** on almost everything
 - Light and dark themes, adjustable text size
@@ -124,6 +130,7 @@ WinFo isn't code-signed yet, so Windows may show *"Windows protected your PC."* 
 - **Framework:** .NET Framework 4.8 with Windows Forms (WinForms) for the user interface
 - **Packaging:** a single, self-contained `WinFo.exe` (under 1 MB) with an embedded icon, version information and application manifest (DPI-aware; asks for the highest available rights)
 - **Third-party libraries:** none. WinFo uses only components built into Windows and the .NET Framework.
+- **Icons:** [Microsoft Fluent UI System Icons](https://github.com/microsoft/fluentui-system-icons) (MIT licence), embedded in the EXE along with their licence.
 
 ### Windows resources used
 | Area | Resource |
@@ -155,7 +162,7 @@ WinFo isn't code-signed yet, so Windows may show *"Windows protected your PC."* 
 - **Disk benchmark:** a temporary test file inside a `WinFo-benchmark` folder on the drive being tested. It is deleted automatically, even if WinFo is closed mid-test.
 
 ### Privacy
-WinFo collects information **locally only**. The only network request it makes on its own is the once-a-day update check to GitHub, which you can turn off in Settings. The network speed test contacts Cloudflare's speed-test servers only when you press *Start speed test*; the Updates Available page asks Windows Update and winget. *Diagnose with AI* opens the AI site you pick in your browser, with the question in the link — only when you click it. Nothing about your PC is ever sent anywhere. Reports are only created when you ask for one.
+WinFo collects information **locally only**. The only network requests it makes on its own are the once-a-day update check to GitHub (which you can turn off in Settings) and the public-IP lookup for the This PC box (`api.ipify.org`, every 10 minutes and when the network changes). The network speed test contacts Cloudflare's speed-test servers only when you press *Start speed test*, and the QUIC check sends one small test packet each to claude.ai, chatgpt.com, google.com, cloudflare.com and copilot.microsoft.com; the Updates Available page asks Windows Update and winget. *Diagnose with AI* opens the AI site you pick in your browser, with the question in the link — only when you click it. Nothing about your PC is ever sent anywhere. Reports are only created when you ask for one.
 
 ---
 
