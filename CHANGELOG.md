@@ -1,5 +1,11 @@
 # WinFo - what's new
 
+## Version 1.9.0 - 2026-11-09
+
+- New Tools > Memory Test: tests the computer's memory (RAM) for faults while Windows keeps running. It takes 50%, 75% or 90% of the memory that's free, locks it in RAM and runs six tests on every byte (address in address, solid zeros and ones, checkerboard, walking ones, random data, moving inversions) on all processor threads - for 1, 3 or 10 passes, or until you stop it. Live tiles show memory tested, pass, errors, speed and time; any error is listed with the test, position, expected and actual value and which bits flipped, plus a plain-English list of likely causes. Results are saved to MemTests.csv
+- One click schedules Windows Memory Diagnostic for a full test of all memory at the next restart, and the page shows its last result from the event log
+- Memory Test button on the ribbon's Tools tab
+
 ## Version 1.8.1 - 2026-11-09
 
 - The "This PC" box (computer name, user, connection, IP and MAC addresses, public IP) now sits at the bottom of the left panel, under the list of pages

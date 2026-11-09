@@ -1,9 +1,9 @@
 {
-  "version": "1.8.1",
+  "version": "1.9.0",
   "url": "https://raw.githubusercontent.com/Dialsoft/winfo/main/WinFo.exe",
-  "sha256": "1014fe737f6d544f4c5977e7cab5c6d3073d6cfba4bfb13fde23e05791facfae",
-  "size": 1250304,
+  "sha256": "6473e03f8499d2dff07ae323d9f5fecb8159a480dafedc0311b8742327b8adf8",
+  "size": 1277440,
   "released": "2026-11-09",
-  "notes": "- The \"This PC\" box (computer name, user, connection, IP and MAC addresses, public IP) now sits at the bottom of the left panel, under the list of pages",
+  "notes": "- New Tools > Memory Test: tests the computer's memory (RAM) for faults while Windows keeps running. It takes 50%, 75% or 90% of the memory that's free, locks it in RAM and runs six tests on every byte (address in address, solid zeros and ones, checkerboard, walking ones, random data, moving inversions) on all processor threads - for 1, 3 or 10 passes, or until you stop it. Live tiles show memory tested, pass, errors, speed and time; any error is listed with the test, position, expected and actual value and which bits flipped, plus a plain-English list of likely causes. Results are saved to MemTests.csv\n- One click schedules Windows Memory Diagnostic for a full test of all memory at the next restart, and the page shows its last result from the event log\n- Memory Test button on the ribbon's Tools tab",
   "page": "https://github.com/Dialsoft/winfo/blob/main/CHANGELOG.md"
 }
