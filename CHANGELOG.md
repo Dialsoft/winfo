@@ -1,5 +1,9 @@
 # WinFo - what's new
 
+## Version 1.9.2 - 2026-11-09
+
+- The QUIC check now explains itself: what QUIC (HTTP/3) is and who uses it, why it sometimes breaks (ERR_QUIC_PROTOCOL_ERROR), how WinFo tests it, and the common causes - firewalls/UTMs that filter web traffic (SonicWall, FortiGate, Sophos, WatchGuard, Meraki...), VPNs and tunnels that drop full-size packets, security software that inspects web traffic on the PC, and ISP equipment - with what to do about each. Shown on the Network Speed Test page even before a test is run; hover any line for the full text
+
 ## Version 1.9.1 - 2026-11-09
 
 - Much faster Summary at startup: the dashboard now appears straight away and each card fills in the moment its information is ready, instead of everything waiting for the slowest check. The 13 Summary checks (computer, storage, network, security, users, file sharing, activation, Windows 11, Safeguards, changes, printers, battery, health) now run at the same time, and slow lookups that several cards need (installed programs, user accounts, security software, BitLocker, file-sharing checks) are done once and shared
