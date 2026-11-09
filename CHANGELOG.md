@@ -1,5 +1,10 @@
 # WinFo - what's new
 
+## Version 1.9.1 - 2026-11-09
+
+- Much faster Summary at startup: the dashboard now appears straight away and each card fills in the moment its information is ready, instead of everything waiting for the slowest check. The 13 Summary checks (computer, storage, network, security, users, file sharing, activation, Windows 11, Safeguards, changes, printers, battery, health) now run at the same time, and slow lookups that several cards need (installed programs, user accounts, security software, BitLocker, file-sharing checks) are done once and shared
+- The time each Summary check takes is written to startup.log, to pinpoint anything still slow on a particular PC
+
 ## Version 1.9.0 - 2026-11-09
 
 - New Tools > Memory Test: tests the computer's memory (RAM) for faults while Windows keeps running. It takes 50%, 75% or 90% of the memory that's free, locks it in RAM and runs six tests on every byte (address in address, solid zeros and ones, checkerboard, walking ones, random data, moving inversions) on all processor threads - for 1, 3 or 10 passes, or until you stop it. Live tiles show memory tested, pass, errors, speed and time; any error is listed with the test, position, expected and actual value and which bits flipped, plus a plain-English list of likely causes. Results are saved to MemTests.csv
