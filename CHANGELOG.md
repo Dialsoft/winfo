@@ -1,5 +1,9 @@
 # WinFo - what's new
 
+## Version 1.7.1 - 2026-11-09
+
+- Fixed "Diagnose with AI" failing to open in Edge/Chrome (ERR_QUIC_PROTOCOL_ERROR): the link to the AI site is now much shorter. The complete question, with the full event message, is always on the clipboard - the status bar says so, and if a page doesn't load you can open the site and press Ctrl+V
+
 ## Version 1.7.0 - 2026-11-09
 
 - Event-log notifications on the Summary dashboard: recent critical events (and serious errors like blue screens, bad disk blocks and hardware errors) appear in a strip at the top, newest first, with when they happened and how many times. New ones appear by themselves within seconds while WinFo is open. Dismiss one and it stays hidden until it happens again

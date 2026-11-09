@@ -1,9 +1,9 @@
 {
-  "version": "1.7.0",
+  "version": "1.7.1",
   "url": "https://raw.githubusercontent.com/Dialsoft/winfo/main/WinFo.exe",
-  "sha256": "6510a0f638a205cf4926ad7ae4ca631b5abf17dd2c9aca03e7b86ef7404c00a7",
-  "size": 825856,
+  "sha256": "be27def2249f9455a0fa4af2a40863a96986daca76bb9f093ecef46962196a06",
+  "size": 827392,
   "released": "2026-11-09",
-  "notes": "- Event-log notifications on the Summary dashboard: recent critical events (and serious errors like blue screens, bad disk blocks and hardware errors) appear in a strip at the top, newest first, with when they happened and how many times. New ones appear by themselves within seconds while WinFo is open. Dismiss one and it stays hidden until it happens again\n- \"Diagnose with AI\" on every notification, in Event Log Problems (right-click) and in the event details window: opens Claude, ChatGPT, Copilot, Perplexity or Gemini with a ready-made question - the PC's model, Windows version, processor and memory, the event and its message - asking what it means and how to fix it. The question is also copied to the clipboard. Computer name, user name and serial number are never included\n- New Settings section \"Notifications and AI\": turn notifications on or off, choose critical only / critical + serious errors / every error, how many days back, and your preferred AI assistant - all apply immediately",
+  "notes": "- Fixed \"Diagnose with AI\" failing to open in Edge/Chrome (ERR_QUIC_PROTOCOL_ERROR): the link to the AI site is now much shorter. The complete question, with the full event message, is always on the clipboard - the status bar says so, and if a page doesn't load you can open the site and press Ctrl+V",
   "page": "https://github.com/Dialsoft/winfo/blob/main/CHANGELOG.md"
 }
