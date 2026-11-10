@@ -1,5 +1,13 @@
 # WinFo - what's new
 
+## Version 1.9.4 - 2026-11-10
+
+- New **Thermal** card on the Summary, updating every second: overall Normal / Warm / Hot, processor, graphics and each drive's temperature, fan speed, whether the PC is **slowing itself down to cool off** (thermal throttling), and the **last 30 days** of overheating Windows recorded (overheating shutdowns and slow-downs) - so a heat problem shows up even if the PC is cool right now
+- A heat problem is impossible to miss: the whole Thermal card turns amber or red, and while anything is hot or throttling a red **Overheating right now** notification sits at the top of the Summary, with Diagnose with AI
+- Event Log Problems and notifications now recognize overheating shutdowns (Windows shut the PC down or hibernated it to protect it from heat)
+- Processor temperature: Windows has no driver-free way to read it. WinFo picks it up automatically while the free LibreHardwareMonitor is running; many laptops also show a firmware (motherboard) reading without it. Hover the line for details
+- Spelling: American spelling throughout (color, gray, center...)
+
 ## Version 1.9.3 - 2026-11-09
 
 - This PC box (bottom of the left panel): new **Domain** line under the computer name - the Active Directory domain the PC is joined to, "Workgroup: <name>" if it isn't, and Entra ID (Azure AD) joins. The Local IP line now says **(DHCP)** or **(static)**, and a new **DNS** line shows the DNS servers in use (tooltip: whether they came from DHCP or were typed in by hand)
