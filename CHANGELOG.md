@@ -1,5 +1,11 @@
 # WinFo - what's new
 
+## Version 1.9.3 - 2026-11-09
+
+- This PC box (bottom of the left panel): new **Domain** line under the computer name - the Active Directory domain the PC is joined to, "Workgroup: <name>" if it isn't, and Entra ID (Azure AD) joins. The Local IP line now says **(DHCP)** or **(static)**, and a new **DNS** line shows the DNS servers in use (tooltip: whether they came from DHCP or were typed in by hand)
+- New **User manual** (PDF, 27 pages) and a 2-minute narrated **Explainer video** - open them from the new buttons on the ribbon's Help tab, or from WinFo's web page
+- Command line: /report, /safeguards or /fleet without a file name after it now stops with an error (exit code 1) instead of silently doing nothing
+
 ## Version 1.9.2 - 2026-11-09
 
 - The QUIC check now explains itself: what QUIC (HTTP/3) is and who uses it, why it sometimes breaks (ERR_QUIC_PROTOCOL_ERROR), how WinFo tests it, and the common causes - firewalls/UTMs that filter web traffic (SonicWall, FortiGate, Sophos, WatchGuard, Meraki...), VPNs and tunnels that drop full-size packets, security software that inspects web traffic on the PC, and ISP equipment - with what to do about each. Shown on the Network Speed Test page even before a test is run; hover any line for the full text

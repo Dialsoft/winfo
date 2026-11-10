@@ -6,6 +6,8 @@ It's built for IT technicians working on client PCs, and friendly enough for any
 
 **[⬇ Download the latest WinFo.exe](https://github.com/Dialsoft/winfo/raw/main/WinFo.exe)** · [What's new (changelog)](CHANGELOG.md)
 
+📘 **[User manual (PDF)](WinFo-User-Manual.pdf)** — every page, button and setting explained with pictures · 🎬 **[2-minute explainer video (MP4)](https://github.com/Dialsoft/winfo/raw/main/WinFo-explainer.mp4)** — a narrated tour of WinFo
+
 No installer: download `WinFo.exe` and run it. It works from a USB stick, a network share, or pushed through a remote-support tool.
 
 ---

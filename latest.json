@@ -1,9 +1,9 @@
 {
-  "version": "1.9.2",
+  "version": "1.9.3",
   "url": "https://raw.githubusercontent.com/Dialsoft/winfo/main/WinFo.exe",
-  "sha256": "b11a6cf13b2f5c3c8edd6fb3925427de0d514e200e1ffa51a36b83192e7f0bc4",
-  "size": 1292288,
+  "sha256": "16379ac6531335efa842e52a1c5a69ac2c12f1b19acde75cb29c2fd41c78e63a",
+  "size": 1301504,
   "released": "2026-11-09",
-  "notes": "- The QUIC check now explains itself: what QUIC (HTTP/3) is and who uses it, why it sometimes breaks (ERR_QUIC_PROTOCOL_ERROR), how WinFo tests it, and the common causes - firewalls/UTMs that filter web traffic (SonicWall, FortiGate, Sophos, WatchGuard, Meraki...), VPNs and tunnels that drop full-size packets, security software that inspects web traffic on the PC, and ISP equipment - with what to do about each. Shown on the Network Speed Test page even before a test is run; hover any line for the full text",
+  "notes": "- This PC box (bottom of the left panel): new **Domain** line under the computer name - the Active Directory domain the PC is joined to, \"Workgroup: <name>\" if it isn't, and Entra ID (Azure AD) joins. The Local IP line now says **(DHCP)** or **(static)**, and a new **DNS** line shows the DNS servers in use (tooltip: whether they came from DHCP or were typed in by hand)\n- New **User manual** (PDF, 27 pages) and a 2-minute narrated **Explainer video** - open them from the new buttons on the ribbon's Help tab, or from WinFo's web page\n- Command line: /report, /safeguards or /fleet without a file name after it now stops with an error (exit code 1) instead of silently doing nothing",
   "page": "https://github.com/Dialsoft/winfo/blob/main/CHANGELOG.md"
 }
