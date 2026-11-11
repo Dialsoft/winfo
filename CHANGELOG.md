@@ -1,5 +1,13 @@
 # WinFo - what's new
 
+## Version 1.9.5 - 2026-11-11
+
+- New **System Summary** page (first under Hardware, and **System summary** on the Home tab): the whole PC at a glance with pictures - the processor chip, the motherboard, one memory stick per slot (empty slots outlined, so you can see where memory can be added), a graphics card or built-in graphics chip, and each drive (NVMe, SSD, hard drive or USB)
+- Processor details: codename (e.g. Raptor Lake Refresh), performance + efficiency cores, caches, microcode, and instruction sets as green (supported) / gray tags
+- **Core meter**: one bar per processor core that moves with how busy it is, with its current speed in MHz (P-cores and E-cores labeled). **Pop out** - or Tools > Core meter - opens it in its own small window that can stay on top
+- Live overall processor load, average clock and memory in use; Windows security tags (UEFI, Secure Boot, TPM, VBS, HVCI, Hypervisor)
+- The user manual has a new System Summary section
+
 ## Version 1.9.4 - 2026-11-10
 
 - New **Thermal** card on the Summary, updating every second: overall Normal / Warm / Hot, processor, graphics and each drive's temperature, fan speed, whether the PC is **slowing itself down to cool off** (thermal throttling), and the **last 30 days** of overheating Windows recorded (overheating shutdowns and slow-downs) - so a heat problem shows up even if the PC is cool right now
