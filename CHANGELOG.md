@@ -1,5 +1,11 @@
 # WinFo - what's new
 
+## Version 1.9.6 - 2026-11-11
+
+- New **installer**: WinFo-Setup.exe installs WinFo just for you (no administrator password needed), with Start menu shortcuts for WinFo and its user manual, an optional desktop shortcut, and an uninstaller in Settings > Apps. The portable WinFo.exe is still there for USB sticks and customer PCs. Both keep themselves up to date
+- New web page with the explainer video, downloads and manual: **dialsoft.com/winfo**. The Help tab's Explainer video button opens it, so the video plays right in the browser
+- Updated explainer video, now including the Thermal card and the System Summary with its live core meter
+
 ## Version 1.9.5 - 2026-11-11
 
 - New **System Summary** page (first under Hardware, and **System summary** on the Home tab): the whole PC at a glance with pictures - the processor chip, the motherboard, one memory stick per slot (empty slots outlined, so you can see where memory can be added), a graphics card or built-in graphics chip, and each drive (NVMe, SSD, hard drive or USB)

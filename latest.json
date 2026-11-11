@@ -1,9 +1,12 @@
 {
-  "version": "1.9.5",
+  "version": "1.9.6",
   "url": "https://raw.githubusercontent.com/Dialsoft/winfo/main/WinFo.exe",
-  "sha256": "b2e49cadac67cdf68bcdc357f36bb7c5fee75556a957e5a715328b473695e00b",
+  "sha256": "a38f5c3917250dcc47d4ed6674692ccabdfa63337350979fd658f2d74b035724",
   "size": 1391104,
   "released": "2026-11-11",
-  "notes": "- New **System Summary** page (first under Hardware, and **System summary** on the Home tab): the whole PC at a glance with pictures - the processor chip, the motherboard, one memory stick per slot (empty slots outlined, so you can see where memory can be added), a graphics card or built-in graphics chip, and each drive (NVMe, SSD, hard drive or USB)\n- Processor details: codename (e.g. Raptor Lake Refresh), performance + efficiency cores, caches, microcode, and instruction sets as green (supported) / gray tags\n- **Core meter**: one bar per processor core that moves with how busy it is, with its current speed in MHz (P-cores and E-cores labeled). **Pop out** - or Tools > Core meter - opens it in its own small window that can stay on top\n- Live overall processor load, average clock and memory in use; Windows security tags (UEFI, Secure Boot, TPM, VBS, HVCI, Hypervisor)\n- The user manual has a new System Summary section",
+  "notes": "- New **installer**: WinFo-Setup.exe installs WinFo just for you (no administrator password needed), with Start menu shortcuts for WinFo and its user manual, an optional desktop shortcut, and an uninstaller in Settings > Apps. The portable WinFo.exe is still there for USB sticks and customer PCs. Both keep themselves up to date\n- New web page with the explainer video, downloads and manual: **dialsoft.com/winfo**. The Help tab's Explainer video button opens it, so the video plays right in the browser\n- Updated explainer video, now including the Thermal card and the System Summary with its live core meter",
+  "setup": "https://raw.githubusercontent.com/Dialsoft/winfo/main/WinFo-Setup.exe",
+  "setup_sha256": "835f304089273094f03ddde66ec3d56fd1a3a2c4b9a1497047898ce74e9097f4",
+  "setup_size": 2568670,
   "page": "https://github.com/Dialsoft/winfo/blob/main/CHANGELOG.md"
 }

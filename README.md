@@ -1,14 +1,14 @@
 # WinFo – System Information for Windows
 
-**WinFo** is a portable, single-file Windows tool that shows everything about a PC — hardware, software, security, live sensors and problems — in plain English, with explanations for every item.
+**WinFo** is a Windows tool (installer or a single portable file) that shows everything about a PC — hardware, software, security, live sensors and problems — in plain English, with explanations for every item.
 
 It's built for IT technicians working on client PCs, and friendly enough for anyone who wants to know what's inside their computer.
 
-**[⬇ Download the latest WinFo.exe](https://github.com/Dialsoft/winfo/raw/main/WinFo.exe)** · [What's new (changelog)](CHANGELOG.md)
+**[⬇ Download the installer (WinFo-Setup.exe)](https://github.com/Dialsoft/winfo/raw/main/WinFo-Setup.exe)** · [Portable WinFo.exe](https://github.com/Dialsoft/winfo/raw/main/WinFo.exe) · [What's new (changelog)](CHANGELOG.md)
 
-📘 **[User manual (PDF)](WinFo-User-Manual.pdf)** — every page, button and setting explained with pictures · 🎬 **[2-minute explainer video (MP4)](https://github.com/Dialsoft/winfo/raw/main/WinFo-explainer.mp4)** — a narrated tour of WinFo
+🌐 **[dialsoft.com/winfo](https://dialsoft.com/winfo)** — the WinFo page with the explainer video · 📘 **[User manual (PDF)](WinFo-User-Manual.pdf)** · 🎬 [Explainer video (MP4)](https://github.com/Dialsoft/winfo/raw/main/WinFo-explainer.mp4)
 
-No installer: download `WinFo.exe` and run it. It works from a USB stick, a network share, or pushed through a remote-support tool.
+Install it with `WinFo-Setup.exe` (just for you, no administrator password), or download the portable `WinFo.exe` and run it - from a USB stick, a network share, or pushed through a remote-support tool.
 
 ---
 
