@@ -17,7 +17,7 @@ Install it with `WinFo-Setup.exe` (just for you, no administrator password), or 
 ### Summary dashboard
 - One card per area: This PC, Live usage, **Thermal**, Processor, Memory, Storage, Graphics & displays, Network, Security, Motherboard & BIOS, Battery and Health checks.
 - **Drag cards to rearrange them**, hide the ones you don't need, and bring them back with *Choose cards…*. Your layout is remembered.
-- **System Summary** page: the whole PC in pictures - processor chip, memory sticks per slot, graphics card, drives - with a live **core meter** (one moving bar per core, with its MHz) that can pop out into its own window.
+- **Hardware pictures** right in the Summary cards - processor chip, memory sticks per slot, graphics card, drives, motherboard - and a live **core meter** down the right edge of the window (one moving bar per core, with its MHz) that can pop out into its own window.
 - **Thermal card**: processor, graphics and drive temperatures, fan speed, whether the PC is slowing itself down to cool off, and overheating shutdowns from the last 30 days. The whole card turns red - plus a red notification at the top - when a PC is overheating.
 - Anything that needs attention is shown in **yellow or red**. Click any card or line to jump straight to the full details, with the item highlighted.
 
