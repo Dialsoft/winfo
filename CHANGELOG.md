@@ -1,5 +1,10 @@
 # WinFo - what's new
 
+## Version 1.9.8 - 2026-11-12
+
+- Help > About now lists the trademarks WinFo mentions (Intel, AMD, NVIDIA, Qualcomm, Microsoft and others) and their owners, and states that WinFo isn't affiliated with or endorsed by them. The user manual's Credits section has the same notice
+- Spelling: "license" (American) everywhere
+
 ## Version 1.9.7 - 2026-11-11
 
 - **One Summary**: the separate System Summary page is gone - its pictures now sit right in the Summary cards: the processor chip (with codename and P + E cores), one memory stick per slot (empty slots outlined), a graphics card or built-in graphics chip, a picture of each drive, the motherboard with its chipset, and Windows security tags (UEFI, Secure Boot, TPM, VBS, HVCI). Hover over a picture for the full details; click it for the card's page

@@ -1,12 +1,12 @@
 {
-  "version": "1.9.7",
+  "version": "1.9.8",
   "url": "https://raw.githubusercontent.com/Dialsoft/winfo/main/WinFo.exe",
-  "sha256": "65afc44155e16ff7d977478d98e2a85957f93f42392e35c24d246e0b6d1e2d24",
-  "size": 1377280,
-  "released": "2026-11-11",
-  "notes": "- **One Summary**: the separate System Summary page is gone - its pictures now sit right in the Summary cards: the processor chip (with codename and P + E cores), one memory stick per slot (empty slots outlined), a graphics card or built-in graphics chip, a picture of each drive, the motherboard with its chipset, and Windows security tags (UEFI, Secure Boot, TPM, VBS, HVCI). Hover over a picture for the full details; click it for the card's page\n- **Core meter on the right edge** of the window, on every page: overall load, average clock and one moving bar per core with its MHz. Pop out (or double-click it) for its own window; View > Core meter hides it. It takes no readings while hidden or minimized\n- Manual and explainer video updated to match",
+  "sha256": "26883230f467ac04e9f1605532209131415bd258c47d0674a407cd16db02affc",
+  "size": 1381888,
+  "released": "2026-11-12",
+  "notes": "- Help > About now lists the trademarks WinFo mentions (Intel, AMD, NVIDIA, Qualcomm, Microsoft and others) and their owners, and states that WinFo isn't affiliated with or endorsed by them. The user manual's Credits section has the same notice\n- Spelling: \"license\" (American) everywhere",
   "setup": "https://raw.githubusercontent.com/Dialsoft/winfo/main/WinFo-Setup.exe",
-  "setup_sha256": "26d7cae020304f449abb1913065853c7319f1559f376f3af082d332fb2000375",
-  "setup_size": 2686101,
+  "setup_sha256": "e0acbb4b836e03a518712d5ede76439bed451d355e0e08a42e9b0d9c8cdbb4cf",
+  "setup_size": 2688206,
   "page": "https://github.com/Dialsoft/winfo/blob/main/CHANGELOG.md"
 }
