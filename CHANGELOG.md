@@ -1,5 +1,12 @@
 # WinFo - what's new
 
+## Version 1.9.9 - 2026-11-17
+
+- New **TPM (Security Chip)** page under Hardware: whether the TPM is there and switched on, version 1.2 or 2.0, who made it (INTC = Intel PTT built into the processor, AMD fTPM, or a separate chip), its firmware and whether Windows can use it - with links to tpm.msc and Windows Security
+- **Works without Run as Admin**: the TPM version is now read for normal users too, so the Windows 11 checks no longer say "run as Administrator" for the TPM
+- **Turned off in the BIOS?** When no TPM is visible, WinFo says so and names the setting for this PC's maker (Dell, HP, Lenovo, MSI, ASUS, Gigabyte, ASRock, Acer, Surface)
+- **Virtual machines**: step-by-step instructions to give a VM its own virtual TPM in Hyper-V, VMware Workstation and VirtualBox (the PC's own TPM is never used by a VM - the usual reason Windows 11 setup in a VM says "This PC must support TPM 2.0")
+
 ## Version 1.9.8 - 2026-11-12
 
 - Help > About now lists the trademarks WinFo mentions (Intel, AMD, NVIDIA, Qualcomm, Microsoft and others) and their owners, and states that WinFo isn't affiliated with or endorsed by them. The user manual's Credits section has the same notice

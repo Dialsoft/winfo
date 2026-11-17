@@ -1,12 +1,12 @@
 {
-  "version": "1.9.8",
+  "version": "1.9.9",
   "url": "https://raw.githubusercontent.com/Dialsoft/winfo/main/WinFo.exe",
-  "sha256": "26883230f467ac04e9f1605532209131415bd258c47d0674a407cd16db02affc",
-  "size": 1381888,
-  "released": "2026-11-12",
-  "notes": "- Help > About now lists the trademarks WinFo mentions (Intel, AMD, NVIDIA, Qualcomm, Microsoft and others) and their owners, and states that WinFo isn't affiliated with or endorsed by them. The user manual's Credits section has the same notice\n- Spelling: \"license\" (American) everywhere",
+  "sha256": "3e6daf666ff95f83b5f1f3c727f21bbd9e025053a5bf54c8e9d2b54200c38334",
+  "size": 1404416,
+  "released": "2026-11-17",
+  "notes": "- New **TPM (Security Chip)** page under Hardware: whether the TPM is there and switched on, version 1.2 or 2.0, who made it (INTC = Intel PTT built into the processor, AMD fTPM, or a separate chip), its firmware and whether Windows can use it - with links to tpm.msc and Windows Security\n- **Works without Run as Admin**: the TPM version is now read for normal users too, so the Windows 11 checks no longer say \"run as Administrator\" for the TPM\n- **Turned off in the BIOS?** When no TPM is visible, WinFo says so and names the setting for this PC's maker (Dell, HP, Lenovo, MSI, ASUS, Gigabyte, ASRock, Acer, Surface)\n- **Virtual machines**: step-by-step instructions to give a VM its own virtual TPM in Hyper-V, VMware Workstation and VirtualBox (the PC's own TPM is never used by a VM - the usual reason Windows 11 setup in a VM says \"This PC must support TPM 2.0\")",
   "setup": "https://raw.githubusercontent.com/Dialsoft/winfo/main/WinFo-Setup.exe",
-  "setup_sha256": "e0acbb4b836e03a518712d5ede76439bed451d355e0e08a42e9b0d9c8cdbb4cf",
-  "setup_size": 2688206,
+  "setup_sha256": "1d03cda16b563d6297ff4254fcf137525c508793f4c8ff704996c1ddd90bbb4b",
+  "setup_size": 2698790,
   "page": "https://github.com/Dialsoft/winfo/blob/main/CHANGELOG.md"
 }
