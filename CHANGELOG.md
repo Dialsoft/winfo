@@ -1,5 +1,13 @@
 # WinFo - what's new
 
+## Version 1.10.0 - 2026-11-24
+
+- New **.NET Readiness** page (Software): can this PC or server run programs built with **.NET 11**, and **.NET 12** as planned? .NET 11 requires a processor with the x86-64-v2 instruction sets (CX16, POPCNT, SSE3, SSSE3, SSE4.1, SSE4.2) - without them .NET 11 programs won't start. Green or red verdict, every instruction set checked, start-up speed (x86-64-v3), and the .NET versions already installed
+- Reads the processor directly (CPUID, like Sysinternals Coreinfo), so older servers (Windows Server 2012 R2 / 2016) are checked correctly too; the System Summary instruction-set tags use it as well
+- **Virtual machines**: shows what the VM passes through and the Hyper-V, VMware EVC and Proxmox/KVM settings that can hide the needed instruction sets
+- The Summary's **Processor** card shows the .NET 11 / 12 verdict, and the fleet spreadsheet (/fleet) has a new **.NET 11 ready** column (added at the end, so existing spreadsheets stay lined up)
+- Fixed: in fleet spreadsheets the "Age (years, from BIOS)" column title split into two, shifting the titles after it by one. WinFo now repairs the title line of an existing spreadsheet by itself the next time it adds a PC
+
 ## Version 1.9.9 - 2026-11-17
 
 - New **TPM (Security Chip)** page under Hardware: whether the TPM is there and switched on, version 1.2 or 2.0, who made it (INTC = Intel PTT built into the processor, AMD fTPM, or a separate chip), its firmware and whether Windows can use it - with links to tpm.msc and Windows Security

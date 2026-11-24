@@ -1,12 +1,12 @@
 {
-  "version": "1.9.9",
+  "version": "1.10.0",
   "url": "https://raw.githubusercontent.com/Dialsoft/winfo/main/WinFo.exe",
-  "sha256": "3e6daf666ff95f83b5f1f3c727f21bbd9e025053a5bf54c8e9d2b54200c38334",
-  "size": 1404416,
-  "released": "2026-11-17",
-  "notes": "- New **TPM (Security Chip)** page under Hardware: whether the TPM is there and switched on, version 1.2 or 2.0, who made it (INTC = Intel PTT built into the processor, AMD fTPM, or a separate chip), its firmware and whether Windows can use it - with links to tpm.msc and Windows Security\n- **Works without Run as Admin**: the TPM version is now read for normal users too, so the Windows 11 checks no longer say \"run as Administrator\" for the TPM\n- **Turned off in the BIOS?** When no TPM is visible, WinFo says so and names the setting for this PC's maker (Dell, HP, Lenovo, MSI, ASUS, Gigabyte, ASRock, Acer, Surface)\n- **Virtual machines**: step-by-step instructions to give a VM its own virtual TPM in Hyper-V, VMware Workstation and VirtualBox (the PC's own TPM is never used by a VM - the usual reason Windows 11 setup in a VM says \"This PC must support TPM 2.0\")",
+  "sha256": "30b8c1229020f7a187a7ac1c6798cc2db4dd6f8b28e5ff2fff1ea8c937684790",
+  "size": 1430016,
+  "released": "2026-11-24",
+  "notes": "- New **.NET Readiness** page (Software): can this PC or server run programs built with **.NET 11**, and **.NET 12** as planned? .NET 11 requires a processor with the x86-64-v2 instruction sets (CX16, POPCNT, SSE3, SSSE3, SSE4.1, SSE4.2) - without them .NET 11 programs won't start. Green or red verdict, every instruction set checked, start-up speed (x86-64-v3), and the .NET versions already installed\n- Reads the processor directly (CPUID, like Sysinternals Coreinfo), so older servers (Windows Server 2012 R2 / 2016) are checked correctly too; the System Summary instruction-set tags use it as well\n- **Virtual machines**: shows what the VM passes through and the Hyper-V, VMware EVC and Proxmox/KVM settings that can hide the needed instruction sets\n- The Summary's **Processor** card shows the .NET 11 / 12 verdict, and the fleet spreadsheet (/fleet) has a new **.NET 11 ready** column (added at the end, so existing spreadsheets stay lined up)\n- Fixed: in fleet spreadsheets the \"Age (years, from BIOS)\" column title split into two, shifting the titles after it by one. WinFo now repairs the title line of an existing spreadsheet by itself the next time it adds a PC",
   "setup": "https://raw.githubusercontent.com/Dialsoft/winfo/main/WinFo-Setup.exe",
-  "setup_sha256": "1d03cda16b563d6297ff4254fcf137525c508793f4c8ff704996c1ddd90bbb4b",
-  "setup_size": 2698790,
+  "setup_sha256": "8c4684477864b7f0acfef24f988c7a26e2d5295e15ed314d846696fe8a2db70e",
+  "setup_size": 2711940,
   "page": "https://github.com/Dialsoft/winfo/blob/main/CHANGELOG.md"
 }
